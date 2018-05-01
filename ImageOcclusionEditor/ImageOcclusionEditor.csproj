@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ImageOcclusionEditor</RootNamespace>
+    <AssemblyName>ImageOcclusionEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imageocclusioneditor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FileSignatures, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FileSignatures.1.2.0\lib\net461\FileSignatures.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg, Version=2.2.1.39233, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Svg.2.3.0\lib\net35\Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PngChunkSVGI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="svg-edit\extensions\shapelib\animal.json" />
+    <None Include="svg-edit\extensions\shapelib\arrow.json" />
+    <None Include="svg-edit\extensions\shapelib\dialog_balloon.json" />
+    <None Include="svg-edit\extensions\shapelib\electronics.json" />
+    <None Include="svg-edit\extensions\shapelib\flowchart.json" />
+    <None Include="svg-edit\extensions\shapelib\game.json" />
+    <None Include="svg-edit\extensions\shapelib\math.json" />
+    <None Include="svg-edit\extensions\shapelib\misc.json" />
+    <None Include="svg-edit\extensions\shapelib\music.json" />
+    <None Include="svg-edit\extensions\shapelib\object.json" />
+    <None Include="svg-edit\extensions\shapelib\raphael_1.json" />
+    <None Include="svg-edit\extensions\shapelib\raphael_2.json" />
+    <None Include="svg-edit\extensions\shapelib\symbol.json" />
+    <None Include="svg-edit\images\svg_edit_icons.svgz" />
+    <None Include="svg-edit\jgraduate\LICENSE" />
+    <None Include="svg-edit\jgraduate\README" />
+    <None Include="svg-edit\js-hotkeys\README.md" />
+    <None Include="svg-edit\svg-editor.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imageocclusioneditor.ico" />
+    <Content Include="svg-edit\browser-not-supported.html" />
+    <Content Include="svg-edit\browser.js" />
+    <Content Include="svg-edit\canvg\canvg.js" />
+    <Content Include="svg-edit\canvg\rgbcolor.js" />
+    <Content Include="svg-edit\config-sample.js" />
+    <Content Include="svg-edit\config.js" />
+    <Content Include="svg-edit\contextmenu.js" />
+    <Content Include="svg-edit\contextmenu\jquery.contextMenu.js" />
+    <Content Include="svg-edit\coords.js" />
+    <Content Include="svg-edit\draw.js" />
+    <Content Include="svg-edit\embedapi-dom.js" />
+    <Content Include="svg-edit\embedapi.html" />
+    <Content Include="svg-edit\embedapi.js" />
+    <Content Include="svg-edit\extensions\allowedMimeTypes.php" />
+    <Content Include="svg-edit\extensions\closepath_icons.svg" />
+    <Content Include="svg-edit\extensions\ext-arrows.js" />
+    <Content Include="svg-edit\extensions\ext-closepath.js" />
+    <Content Include="svg-edit\extensions\ext-connector.js" />
+    <Content Include="svg-edit\extensions\ext-eyedropper.js" />
+    <Content Include="svg-edit\extensions\ext-foreignobject.js" />
+    <Content Include="svg-edit\extensions\ext-grid.js" />
+    <Content Include="svg-edit\extensions\ext-helloworld.js" />
+    <Content Include="svg-edit\extensions\ext-imagelib.js" />
+    <Content Include="svg-edit\extensions\ext-imagelib.xml" />
+    <Content Include="svg-edit\extensions\ext-markers.js" />
+    <Content Include="svg-edit\extensions\ext-mathjax.js" />
+    <Content Include="svg-edit\extensions\ext-overview_window.js" />
+    <Content Include="svg-edit\extensions\ext-panning.js" />
+    <Content Include="svg-edit\extensions\ext-panning.xml" />
+    <Content Include="svg-edit\extensions\ext-php_savefile.js" />
+    <Content Include="svg-edit\extensions\ext-polygon.js" />
+    <Content Include="svg-edit\extensions\ext-server_moinsave.js" />
+    <Content Include="svg-edit\extensions\ext-server_opensave.js" />
+    <Content Include="svg-edit\extensions\ext-shapes.js" />
+    <Content Include="svg-edit\extensions\ext-shapes.xml" />
+    <Content Include="svg-edit\extensions\ext-star.js" />
+    <Content Include="svg-edit\extensions\ext-storage.js" />
+    <Content Include="svg-edit\extensions\ext-webappfind.js" />
+    <Content Include="svg-edit\extensions\ext-xdomain-messaging.js" />
+    <Content Include="svg-edit\extensions\eyedropper-icon.xml" />
+    <Content Include="svg-edit\extensions\eyedropper.png" />
+    <Content Include="svg-edit\extensions\fileopen.php" />
+    <Content Include="svg-edit\extensions\filesave.php" />
+    <Content Include="svg-edit\extensions\foreignobject-icons.xml" />
+    <Content Include="svg-edit\extensions\grid-icon.xml" />
+    <Content Include="svg-edit\extensions\helloworld-icon.xml" />
+    <Content Include="svg-edit\extensions\imagelib\index.html" />
+    <Content Include="svg-edit\extensions\imagelib\smiley.svg" />
+    <Content Include="svg-edit\extensions\markers-icons.xml" />
+    <Content Include="svg-edit\extensions\mathjax-icons.xml" />
+    <Content Include="svg-edit\extensions\polygon-icons.svg" />
+    <Content Include="svg-edit\extensions\savefile.php" />
+    <Content Include="svg-edit\extensions\shapelib\raphael.txt" />
+    <Content Include="svg-edit\extensions\star-icons.svg" />
+    <Content Include="svg-edit\extensions\webappfind-icon.svg" />
+    <Content Include="svg-edit\history.js" />
+    <Content Include="svg-edit\images\align-bottom.png" />
+    <Content Include="svg-edit\images\align-bottom.svg" />
+    <Content Include="svg-edit\images\align-center.png" />
+    <Content Include="svg-edit\images\align-center.svg" />
+    <Content Include="svg-edit\images\align-left.png" />
+    <Content Include="svg-edit\images\align-left.svg" />
+    <Content Include="svg-edit\images\align-middle.png" />
+    <Content Include="svg-edit\images\align-middle.svg" />
+    <Content Include="svg-edit\images\align-right.png" />
+    <Content Include="svg-edit\images\align-right.svg" />
+    <Content Include="svg-edit\images\align-top.png" />
+    <Content Include="svg-edit\images\align-top.svg" />
+    <Content Include="svg-edit\images\bold.png" />
+    <Content Include="svg-edit\images\cancel.png" />
+    <Content Include="svg-edit\images\circle.png" />
+    <Content Include="svg-edit\images\clear.png" />
+    <Content Include="svg-edit\images\clone.png" />
+    <Content Include="svg-edit\images\conn.svg" />
+    <Content Include="svg-edit\images\copy.png" />
+    <Content Include="svg-edit\images\cut.png" />
+    <Content Include="svg-edit\images\delete.png" />
+    <Content Include="svg-edit\images\document-properties.png" />
+    <Content Include="svg-edit\images\dropdown.gif" />
+    <Content Include="svg-edit\images\ellipse.png" />
+    <Content Include="svg-edit\images\eye.png" />
+    <Content Include="svg-edit\images\fhpath.png" />
+    <Content Include="svg-edit\images\flyouth.png" />
+    <Content Include="svg-edit\images\flyup.gif" />
+    <Content Include="svg-edit\images\freehand-circle.png" />
+    <Content Include="svg-edit\images\freehand-square.png" />
+    <Content Include="svg-edit\images\go-down.png" />
+    <Content Include="svg-edit\images\go-up.png" />
+    <Content Include="svg-edit\images\image.png" />
+    <Content Include="svg-edit\images\italic.png" />
+    <Content Include="svg-edit\images\line.png" />
+    <Content Include="svg-edit\images\link_controls.png" />
+    <Content Include="svg-edit\images\logo.png" />
+    <Content Include="svg-edit\images\logo.svg" />
+    <Content Include="svg-edit\images\move_bottom.png" />
+    <Content Include="svg-edit\images\move_top.png" />
+    <Content Include="svg-edit\images\node_clone.png" />
+    <Content Include="svg-edit\images\node_delete.png" />
+    <Content Include="svg-edit\images\none.png" />
+    <Content Include="svg-edit\images\open.png" />
+    <Content Include="svg-edit\images\paste.png" />
+    <Content Include="svg-edit\images\path.png" />
+    <Content Include="svg-edit\images\polygon.png" />
+    <Content Include="svg-edit\images\polygon.svg" />
+    <Content Include="svg-edit\images\README.txt" />
+    <Content Include="svg-edit\images\rect.png" />
+    <Content Include="svg-edit\images\redo.png" />
+    <Content Include="svg-edit\images\reorient.png" />
+    <Content Include="svg-edit\images\rotate.png" />
+    <Content Include="svg-edit\images\save.png" />
+    <Content Include="svg-edit\images\select.png" />
+    <Content Include="svg-edit\images\select_node.png" />
+    <Content Include="svg-edit\images\sep.png" />
+    <Content Include="svg-edit\images\shape_group_elements.png" />
+    <Content Include="svg-edit\images\shape_ungroup.png" />
+    <Content Include="svg-edit\images\source.png" />
+    <Content Include="svg-edit\images\spinbtn_updn_big.png" />
+    <Content Include="svg-edit\images\square.png" />
+    <Content Include="svg-edit\images\svg_edit_icons.svg" />
+    <Content Include="svg-edit\images\text.png" />
+    <Content Include="svg-edit\images\text.svg" />
+    <Content Include="svg-edit\images\to_path.png" />
+    <Content Include="svg-edit\images\undo.png" />
+    <Content Include="svg-edit\images\view-refresh.png" />
+    <Content Include="svg-edit\images\wave.png" />
+    <Content Include="svg-edit\images\wireframe.png" />
+    <Content Include="svg-edit\images\zoom.png" />
+    <Content Include="svg-edit\jgraduate\css\jgraduate.css" />
+    <Content Include="svg-edit\jgraduate\css\jPicker.css" />
+    <Content Include="svg-edit\jgraduate\images\AlphaBar.png" />
+    <Content Include="svg-edit\jgraduate\images\bar-opacity.png" />
+    <Content Include="svg-edit\jgraduate\images\Bars.png" />
+    <Content Include="svg-edit\jgraduate\images\map-opacity.png" />
+    <Content Include="svg-edit\jgraduate\images\mappoint.gif" />
+    <Content Include="svg-edit\jgraduate\images\mappoint_c.png" />
+    <Content Include="svg-edit\jgraduate\images\mappoint_f.png" />
+    <Content Include="svg-edit\jgraduate\images\Maps.png" />
+    <Content Include="svg-edit\jgraduate\images\NoColor.png" />
+    <Content Include="svg-edit\jgraduate\images\picker.gif" />
+    <Content Include="svg-edit\jgraduate\images\preview-opacity.png" />
+    <Content Include="svg-edit\jgraduate\images\rangearrows.gif" />
+    <Content Include="svg-edit\jgraduate\images\rangearrows2.gif" />
+    <Content Include="svg-edit\jgraduate\jpicker.js" />
+    <Content Include="svg-edit\jgraduate\jpicker.min.js" />
+    <Content Include="svg-edit\jgraduate\jquery.jgraduate.js" />
+    <Content Include="svg-edit\jgraduate\jquery.jgraduate.min.js" />
+    <Content Include="svg-edit\jquery-svg.js" />
+    <Content Include="svg-edit\jquery-ui\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="svg-edit\jquery-ui\jquery-ui-1.8.custom.min.js" />
+    <Content Include="svg-edit\jquery.js" />
+    <Content Include="svg-edit\jquerybbq\jquery.bbq.min.js" />
+    <Content Include="svg-edit\js-hotkeys\jquery.hotkeys.min.js" />
+    <Content Include="svg-edit\jspdf\jspdf.min.js" />
+    <Content Include="svg-edit\jspdf\jspdf.plugin.svgToPdf.js" />
+    <Content Include="svg-edit\jspdf\underscore-min.js" />
+    <Content Include="svg-edit\locale\lang.af.js" />
+    <Content Include="svg-edit\locale\lang.ar.js" />
+    <Content Include="svg-edit\locale\lang.az.js" />
+    <Content Include="svg-edit\locale\lang.be.js" />
+    <Content Include="svg-edit\locale\lang.bg.js" />
+    <Content Include="svg-edit\locale\lang.ca.js" />
+    <Content Include="svg-edit\locale\lang.cs.js" />
+    <Content Include="svg-edit\locale\lang.cy.js" />
+    <Content Include="svg-edit\locale\lang.da.js" />
+    <Content Include="svg-edit\locale\lang.de.js" />
+    <Content Include="svg-edit\locale\lang.el.js" />
+    <Content Include="svg-edit\locale\lang.en.js" />
+    <Content Include="svg-edit\locale\lang.es.js" />
+    <Content Include="svg-edit\locale\lang.et.js" />
+    <Content Include="svg-edit\locale\lang.fa.js" />
+    <Content Include="svg-edit\locale\lang.fi.js" />
+    <Content Include="svg-edit\locale\lang.fr.js" />
+    <Content Include="svg-edit\locale\lang.fy.js" />
+    <Content Include="svg-edit\locale\lang.ga.js" />
+    <Content Include="svg-edit\locale\lang.gl.js" />
+    <Content Include="svg-edit\locale\lang.he.js" />
+    <Content Include="svg-edit\locale\lang.hi.js" />
+    <Content Include="svg-edit\locale\lang.hr.js" />
+    <Content Include="svg-edit\locale\lang.hu.js" />
+    <Content Include="svg-edit\locale\lang.hy.js" />
+    <Content Include="svg-edit\locale\lang.id.js" />
+    <Content Include="svg-edit\locale\lang.is.js" />
+    <Content Include="svg-edit\locale\lang.it.js" />
+    <Content Include="svg-edit\locale\lang.ja.js" />
+    <Content Include="svg-edit\locale\lang.ko.js" />
+    <Content Include="svg-edit\locale\lang.lt.js" />
+    <Content Include="svg-edit\locale\lang.lv.js" />
+    <Content Include="svg-edit\locale\lang.mk.js" />
+    <Content Include="svg-edit\locale\lang.ms.js" />
+    <Content Include="svg-edit\locale\lang.mt.js" />
+    <Content Include="svg-edit\locale\lang.nl.js" />
+    <Content Include="svg-edit\locale\lang.no.js" />
+    <Content Include="svg-edit\locale\lang.pl.js" />
+    <Content Include="svg-edit\locale\lang.pt-BR.js" />
+    <Content Include="svg-edit\locale\lang.pt-PT.js" />
+    <Content Include="svg-edit\locale\lang.ro.js" />
+    <Content Include="svg-edit\locale\lang.ru.js" />
+    <Content Include="svg-edit\locale\lang.sk.js" />
+    <Content Include="svg-edit\locale\lang.sl.js" />
+    <Content Include="svg-edit\locale\lang.sq.js" />
+    <Content Include="svg-edit\locale\lang.sr.js" />
+    <Content Include="svg-edit\locale\lang.sv.js" />
+    <Content Include="svg-edit\locale\lang.sw.js" />
+    <Content Include="svg-edit\locale\lang.test.js" />
+    <Content Include="svg-edit\locale\lang.th.js" />
+    <Content Include="svg-edit\locale\lang.tl.js" />
+    <Content Include="svg-edit\locale\lang.tr.js" />
+    <Content Include="svg-edit\locale\lang.uk.js" />
+    <Content Include="svg-edit\locale\lang.vi.js" />
+    <Content Include="svg-edit\locale\lang.yi.js" />
+    <Content Include="svg-edit\locale\lang.zh-CN.js" />
+    <Content Include="svg-edit\locale\lang.zh-HK.js" />
+    <Content Include="svg-edit\locale\lang.zh-TW.js" />
+    <Content Include="svg-edit\locale\locale.js" />
+    <Content Include="svg-edit\locale\README.txt" />
+    <Content Include="svg-edit\math.js" />
+    <Content Include="svg-edit\path.js" />
+    <Content Include="svg-edit\pathseg.js" />
+    <Content Include="svg-edit\recalculate.js" />
+    <Content Include="svg-edit\sanitize.js" />
+    <Content Include="svg-edit\select.js" />
+    <Content Include="svg-edit\spinbtn\JQuerySpinBtn.css" />
+    <Content Include="svg-edit\spinbtn\JQuerySpinBtn.js" />
+    <Content Include="svg-edit\spinbtn\JQuerySpinBtn.min.js" />
+    <Content Include="svg-edit\spinbtn\spinbtn_updn.png" />
+    <Content Include="svg-edit\svg-editor.css" />
+    <Content Include="svg-edit\svg-editor.html" />
+    <Content Include="svg-edit\svg-editor.js" />
+    <Content Include="svg-edit\svgcanvas.js" />
+    <Content Include="svg-edit\svgedit.compiled.js" />
+    <Content Include="svg-edit\svgedit.js" />
+    <Content Include="svg-edit\svgicons\jquery.svgicons.js" />
+    <Content Include="svg-edit\svgtransformlist.js" />
+    <Content Include="svg-edit\svgutils.js" />
+    <Content Include="svg-edit\touch.js" />
+    <Content Include="svg-edit\units.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pngcs-master\Hjg.Pngcs\Hjg.Pngcs.csproj">
+      <Project>{fd3b0d50-46b3-4a83-9a6d-c641569142cf}</Project>
+      <Name>Hjg.Pngcs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY "$(ProjectDir)svg-edit" "$(TargetDir)svg-edit" /S /Y /I</PostBuildEvent>
+  </PropertyGroup>
+</Project>

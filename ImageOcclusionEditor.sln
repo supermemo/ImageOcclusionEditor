@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageOcclusionEditor", "ImageOcclusionEditor\ImageOcclusionEditor.csproj", "{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hjg.Pngcs", "pngcs-master\Hjg.Pngcs\Hjg.Pngcs.csproj", "{FD3B0D50-46B3-4A83-9A6D-C641569142CF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{C7FB7C7F-6152-4DFD-B703-398828D4C261}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Licenses", "Licenses", "{6D39308A-6A78-47BA-8065-6E0D512A6420}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		LICENSE-FileSignature.txt = LICENSE-FileSignature.txt
+		LICENSE.svg-edit.txt = LICENSE.svg-edit.txt
+		LICENSE.vvv-svg.txt = LICENSE.vvv-svg.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{6774D6BA-D722-45A6-B10C-82D567E0C761}"
+	ProjectSection(SolutionItems) = preProject
+		imageocclusioneditor.ico = imageocclusioneditor.ico
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug45|Any CPU = Debug45|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release45|Any CPU = Release45|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Debug45|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Debug45|Any CPU.Build.0 = Debug|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Release45|Any CPU.ActiveCfg = Release|Any CPU
+		{6F73C146-B354-47D2-AEBD-6AF2EF20AA73}.Release45|Any CPU.Build.0 = Release|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Debug|Any CPU.ActiveCfg = Debug45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Debug|Any CPU.Build.0 = Debug45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Debug45|Any CPU.ActiveCfg = Debug45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Debug45|Any CPU.Build.0 = Debug45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Release|Any CPU.ActiveCfg = Release45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Release|Any CPU.Build.0 = Release45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Release45|Any CPU.ActiveCfg = Release45|Any CPU
+		{FD3B0D50-46B3-4A83-9A6D-C641569142CF}.Release45|Any CPU.Build.0 = Release45|Any CPU
+		{C7FB7C7F-6152-4DFD-B703-398828D4C261}.Debug|Any CPU.ActiveCfg = Debug
+		{C7FB7C7F-6152-4DFD-B703-398828D4C261}.Debug45|Any CPU.ActiveCfg = Debug
+		{C7FB7C7F-6152-4DFD-B703-398828D4C261}.Release|Any CPU.ActiveCfg = Release
+		{C7FB7C7F-6152-4DFD-B703-398828D4C261}.Release45|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {337E6EEF-7A61-491C-BC49-B4B188C6E82E}
+	EndGlobalSection
+EndGlobal
