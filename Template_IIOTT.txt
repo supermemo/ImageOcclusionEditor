@@ -1,0 +1,84 @@
+Begin Element #4
+Source=d:\supermemo\test\test
+Parent=4
+ParentTitle=Parent Title
+Priority=0
+Begin ElementInfo #4
+Title=iiott Item Image Occlusion W/Two Texts
+Type=Item
+Status=Memorized
+FirstGrade=8
+Ordinal=10004.000000
+Repetitions=1
+Lapses=0
+Interval=3
+LastRepetition=30.04.18
+AFactor=3.920
+UFactor=3.000
+ForgettingIndex=10
+Reference=
+SourceArticle=0
+End ElementInfo #4
+ElementColor=-16777211
+AutoPlay=1
+BackgroundImage=
+BackgroundFile=
+BackgroundStyle=Tile
+Scaled=1
+ReadPointComponent=0
+ReadPointStart=0
+ReadPointLength=0
+ReadPointScrollTop=0
+ComponentNo=4
+Begin Component #1
+Type=Image
+Cors=(4900,1,4900,9800)
+DisplayAt=251
+Hyperlink=0
+ImageName=
+ImageFile=
+Stretch=1
+ClickPlay=0
+TestElement=0
+Transparent=0
+Zoom=[0,0,0,0]
+End Component #1
+Begin Component #2
+Type=Image
+Cors=(4900,1,4900,9800)
+DisplayAt=63
+Hyperlink=0
+ImageName=
+ImageFile=
+Stretch=1
+ClickPlay=0
+TestElement=0
+Transparent=0
+Zoom=[0,0,0,0]
+End Component #2
+Begin Component #3
+Type=HTML
+Cors=(1,1,4900,4900)
+DisplayAt=255
+Hyperlink=0
+Text=
+TestElement=0
+ReadOnly=0
+FullHTML=1
+Style=0
+End Component #3
+Begin Component #4
+Type=HTML
+Cors=(1,4900,4900,4900)
+DisplayAt=255
+Hyperlink=0
+Text=
+TestElement=0
+ReadOnly=0
+FullHTML=1
+Style=0
+End Component #4
+Begin RepHist #4
+ElNo=4 Rep=1 Date=30.04.2018 Hour=17.722 Int=0 Grade=8 Laps=0 expFI=99 Priority=0
+End RepHist #4
+End Element #4
