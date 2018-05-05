@@ -21,6 +21,20 @@ This software works in tandem with SuperMemo Assistant, found [on this same GitH
 [![Image Occlusion Editor Demonstration](https://img.youtube.com/vi/BJ1ZAYSGJ4M/0.jpg)](https://youtu.be/BJ1ZAYSGJ4M)
 
 
+## Additional Templates
+
+Occlusion + 1 HTML         |  Occlusion + 2 HTML
+:-------------------------:|:-------------------------:
+[Download link](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOT.txt)  |  [Download link](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOTT.txt)
+![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOT.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOTT.png)
+
+**How to** apply:
+1. Copy the template in your Clipboard (Ctrl+C)
+2. Open SuperMemo
+3. Paste (Ctrl+V) the template
+4. Save as Template (Alt+10 > Template > Save as Template)
+5. Apply the template to your Occlusion Items
+
 ## Configuration (Optional)
 
 In **App.config**:
