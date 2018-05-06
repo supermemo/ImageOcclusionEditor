@@ -79,5 +79,5 @@ I would like to emphasize on the importance of their contribution, and extend my
 * *Neil Harvey* for his [FileSignature library](https://github.com/neilharvey/FileSignatures)
 * *Aristotelis P.* and predecessors for [the original idea](https://github.com/glutanimate/image-occlusion-enhanced), and years of using their Occlusion Addon in the past
 
-All required licenses can be found at the root of this project repository.
+All required licenses [can be found](Resources/Licenses) in this project repository.
 If however you found that I omitted to include the terms of the license for one of your work, by all mean please let me know so that I may correct this.
