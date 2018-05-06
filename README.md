@@ -1,27 +1,40 @@
-# Image Occlusion Editor
+## Image Occlusion Editor
 
 ***Image Occlusion Editor*** is companion software to *SuperMemo*. It is meant as an **alternative** to the **built-in Image Occlusion** template, with the advantage of supporting multiple screen resolutions.
 
 This software works in tandem with SuperMemo Assistant, found [on this same GitHub profile](https://github.com/supermemo/SuperMemoAssistant)
 
+### Table of Content
+- [Screenshots](#screenshots)
+- [Downloads](#downloads)
+- [Information](#information)
+- [Demonstration Video](#demonstration-video)
+- [Additional Templates](#additional-templates)
+- [Configuration (Optional)](#configuration-optional)
+- [Special thanks, Credits, Licenses](#special-thanks-credits-licenses)
+
+### Screenshots
+
+[![Image Occlusion Editor](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)
+
+### Downloads
+
 [**All releases**](https://github.com/supermemo/ImageOcclusionEditor/releases)
 
 [**Latest version (installer)**](https://github.com/supermemo/ImageOcclusionEditor/releases/download/1.0/ImageOcclusionEditor_v1.0_Setup.msi)
 
-[![Image Occlusion Editor](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)
-
-## Information
+### Information
 
 **Usage**: `ImageOcclusionEditor.exe <BackgroundFile> <OcclusionFile>`
 
 **Editing**: The SVG code is embedded inside the PNG Occlusion file, enabling edition of existing occlusions. Simply open them again with Image Occlusion Editing like you normally would.
 
 
-## Demonstration video
+### Demonstration video
 [![Image Occlusion Editor Demonstration](https://img.youtube.com/vi/BJ1ZAYSGJ4M/0.jpg)](https://youtu.be/BJ1ZAYSGJ4M)
 
 
-## Additional Templates
+### Additional Templates
 
 Occlusion + 1 HTML         |  Occlusion + 2 HTML
 :-------------------------:|:-------------------------:
@@ -35,7 +48,7 @@ Occlusion + 1 HTML         |  Occlusion + 2 HTML
 4. Save as Template (Alt+10 > Template > Save as Template)
 5. Apply the template to your Occlusion Items
 
-## Configuration (Optional)
+### Configuration (Optional)
 
 In **App.config**:
 ```
@@ -54,7 +67,7 @@ In **App.config**:
 * **StrokeWidth**: Default occlusion border width
 * **FillColor**: Default occlusion background color
 
-## Special thanks, Credits, Licenses
+### Special thanks, Credits, Licenses
 
 *Image Occlusion Editor* is built on the work of people who pledged their time to the Open Source community.
 
