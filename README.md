@@ -15,7 +15,7 @@
 
 ### Screenshots
 
-Image Occlusion Editor     |  Occlusion in SuperMemo
+Occlusion Editor           |  Occlusion in SuperMemo
 :-------------------------:|:-------------------------:
 ![](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/Resources/ImageOcclusionEditor-v1.0.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/ElementWindow.png)
 
@@ -29,7 +29,7 @@ Image Occlusion Editor     |  Occlusion in SuperMemo
 
 **Usage**: `ImageOcclusionEditor.exe <BackgroundFile> <OcclusionFile>`
 
-**Editing**: The SVG code is embedded inside the PNG Occlusion file, enabling edition of existing occlusions. Simply open them again with Image Occlusion Editing like you normally would.
+**Editing occlusions**: The SVG code is embedded inside the PNG Occlusion file, enabling edition of existing occlusions. Simply open them again with Image Occlusion Editing like you normally would.
 
 
 ### Demonstration video
