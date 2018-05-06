@@ -15,7 +15,9 @@ This software works in tandem with SuperMemo Assistant, found [on this same GitH
 
 ### Screenshots
 
-[![Image Occlusion Editor](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)
+Image Occlusion Editor     |  Occlusion in SuperMemo
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/ElementWindow.png)
 
 ### Downloads
 
