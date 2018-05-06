@@ -2,7 +2,7 @@
 
 *Image Occlusion Editor* is companion software to *SuperMemo*. It is meant as an **alternative** to the **built-in Image Occlusion** template, with the advantage of supporting multiple screen resolutions.
 
-![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/warning_24.png) This software works in tandem with **SuperMemo Assistant**, found [on this same GitHub profile](https://github.com/supermemo/SuperMemoAssistant)
+![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/warning_24.png) This software works in tandem with **SuperMemo Assistant**, found [on this same GitHub profile](https://github.com/supermemo/SuperMemoAssistant)
 
 ### Table of Content
 - [Screenshots](#screenshots)
@@ -17,7 +17,7 @@
 
 Image Occlusion Editor     |  Occlusion in SuperMemo
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/ImageOcclusionEditor-v1.0.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/ElementWindow.png)
+![](https://raw.githubusercontent.com/SuperMemo/ImageOcclusionEditor/master/Resources/ImageOcclusionEditor-v1.0.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/ElementWindow.png)
 
 ### Downloads
 
@@ -40,8 +40,8 @@ Image Occlusion Editor     |  Occlusion in SuperMemo
 
 Occlusion + 1 HTML         |  Occlusion + 2 HTML
 :-------------------------:|:-------------------------:
-[Download link](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOT.txt)  |  [Download link](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOTT.txt)
-![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOT.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Template_IIOTT.png)
+[Download link](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/Template_IIOT.txt)  |  [Download link](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/Template_IIOTT.txt)
+![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/Template_IIOT.png)  |  ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/Template_IIOTT.png)
 
 **How to** apply:
 1. Copy the template in your Clipboard (Ctrl+C)

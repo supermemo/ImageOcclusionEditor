@@ -39,6 +39,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6D538B53531748928A629A30533D2315"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6E44645042A5C672AE574D1B31856804"
         "OwnerKey" = "8:_166074C9EAE14AC2A2CA22B05DF0BA65"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,19 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_ABFF46F6C986C8F1132749B0918CFB06"
+        "OwnerKey" = "8:_166074C9EAE14AC2A2CA22B05DF0BA65"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_C723D25E9C79F7600EAB4FBF5B53719F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_166074C9EAE14AC2A2CA22B05DF0BA65"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -97,6 +97,12 @@
         "OwnerKey" = "8:_45CF8E20E0284D7F07F3043FF4E94EBC"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_ABFF46F6C986C8F1132749B0918CFB06"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -115,6 +121,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -131,6 +145,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -240,6 +270,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6D538B53531748928A629A30533D2315"
+            {
+            "SourcePath" = "8:..\\imageocclusioneditor.ico"
+            "TargetName" = "8:imageocclusioneditor.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_DA2DB6E374374007830B3395D7176CFA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6E44645042A5C672AE574D1B31856804"
@@ -376,7 +426,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_DA2DB6E374374007830B3395D7176CFA"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder]\\ImageOcclusionEditor"
+            "DefaultLocation" = "8:[ProgramFilesFolder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -401,13 +451,13 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup"
+        "ProductName" = "8:ImageOcclusionEditor"
         "ProductCode" = "8:{66E8B6AE-1831-40DB-807E-AD3A9B62609E}"
-        "PackageCode" = "8:{5BBA4DF1-A0E6-4973-8711-2B297779630E}"
+        "PackageCode" = "8:{479A653D-2907-47B0-B7C6-29EF0A98F87B}"
         "UpgradeCode" = "8:{3693D031-D41D-424E-A73D-83175C4F8C53}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
@@ -420,7 +470,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_6D538B53531748928A629A30533D2315"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
