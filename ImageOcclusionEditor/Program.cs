@@ -19,16 +19,37 @@ namespace ImageOcclusionEditor
     static void Main(string[] args)
     {
       if (args.Length != 2)
+      {
+        MessageBox.Show("Invalid number of parameters. Usage: ImageOcclusionEditor.exe <background-image-path> <occlusion-image-path>");
         return;
+      }
 
       string backgroundImg = args[0];
       string occlusionImg = args[1];
 
-      if (!File.Exists(backgroundImg) || !File.Exists(occlusionImg))
+      if (!File.Exists(backgroundImg))
+      {
+        MessageBox.Show(String.Format("Background file {0} doesn't exist", backgroundImg));
         return;
+      }
 
-      if (!ValidateImage(backgroundImg) || !ValidateImage(occlusionImg))
+      if (!File.Exists(occlusionImg))
+      {
+        MessageBox.Show(String.Format("Occlusion file {0} doesn't exist", occlusionImg));
         return;
+      }
+
+      if (!ValidateImage(backgroundImg))
+      {
+        MessageBox.Show(String.Format("Background file {0} isn't a known Image Format", backgroundImg));
+        return;
+      }
+
+      if (!ValidateImage(occlusionImg))
+      {
+        MessageBox.Show(String.Format("Occlusion file {0} isn't a known Image Format", occlusionImg));
+        return;
+      }
 
       PngChunk.FactoryRegister(PngChunkSVGI.ID, typeof(PngChunkSVGI));
 
@@ -39,11 +60,21 @@ namespace ImageOcclusionEditor
 
     private static bool ValidateImage(string filePath)
     {
-      using (Stream stream = File.OpenRead(filePath))
+      try
       {
-        var insp = new FileFormatInspector();
+        using (Stream stream = File.OpenRead(filePath))
+        {
+          var insp = new FileFormatInspector();
 
-        return insp.DetermineFileFormat(stream) is Image;
+          return insp.DetermineFileFormat(stream) is Image;
+        }
+      }
+      catch (Exception ex)
+      {
+        MessageBox.Show(String.Format("An exception was thrown while opening file {0}.\n\nException message: {1}", filePath, ex.Message));
+        Application.Exit();
+
+        return false;
       }
     }
   }
