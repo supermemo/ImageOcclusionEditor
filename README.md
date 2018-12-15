@@ -52,7 +52,7 @@ Occlusion + 1 HTML         |  Occlusion + 2 HTML
 
 ### Configuration (Optional)
 
-In **App.config**:
+In **ImageOcclusionEditor.exe.config**:
 ```
 <setting name="StrokeColor" serializeAs="String">
   <value>2D2D2D</value>
