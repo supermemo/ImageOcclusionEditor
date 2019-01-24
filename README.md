@@ -47,8 +47,8 @@ Occlusion + 1 HTML         |  Occlusion + 2 HTML
 1. Copy the template in your Clipboard (Ctrl+C)
 2. Open SuperMemo
 3. Paste (Ctrl+V) the template
-4. Save as Template (Alt+10 > Template > Save as Template)
-5. Apply the template to your Occlusion Items
+4. Save as Template (Alt+F10 > Template > Save as Template)
+5. Apply the template (Ctrl+Shift+M) to your Occlusion Items
 
 ### Configuration (Optional)
 
