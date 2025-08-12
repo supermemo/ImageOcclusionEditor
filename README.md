@@ -2,6 +2,13 @@
 
 *Image Occlusion Editor* is companion software to *SuperMemo*. It is meant as an **alternative** to the **built-in Image Occlusion** template, with the advantage of supporting multiple screen resolutions.
 
+## ⚠ Development of Image Occlusion Editor **has been discontinued** ⚠
+
+User-maintained forks:
+- [HCoona's Fork](https://github.com/hcoona/ImageOcclusionEditor)
+
+---
+
 ![](https://github.com/supermemo/ImageOcclusionEditor/raw/master/Resources/warning_24.png) This software works in tandem with **SuperMemo Assistant**, found [on this same GitHub profile](https://github.com/supermemo/SuperMemoAssistant)
 
 ### Table of Content
